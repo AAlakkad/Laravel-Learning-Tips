@@ -7,7 +7,7 @@ When you create/generate a User model and want to use it for login using `Auth::
 * `User` model class must implements `UserInterface` inteface from \Illuminate\Auth\UserInterface, (add `use Illuminate\Auth\UserInterface;` before class declaration).
 * `User` model class must have these two methods:
 
-	public function getAuthIdentifier() {
+    public function getAuthIdentifier() {
     	return $this->getKey();
     }
     public function getAuthPassword() {
